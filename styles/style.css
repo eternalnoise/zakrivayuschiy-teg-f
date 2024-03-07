@@ -25,7 +25,9 @@
   background-size: cover;
   inline-size: var(--inline-size);
   margin: 0 auto;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
@@ -33,17 +35,20 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 25px;
-  font-family: var(--accent-font, monospace);
+  font-family: var(--accent-font, fantasy);
   block-size: clamp(20.188rem, 3.661vw + 19.455rem, 22.75rem);
   margin-block: 102px 104px;
   text-transform: uppercase;
+  border: 2px solid var(--main-text-color);
+  background-color: var(--background-color);
+  
 
 }
 
 .header__title {
-  font-size: 49px;
+  font-size: clamp(3.063rem, 4.984vw + 1.894rem, 4.063rem);
    
 }
 
@@ -61,6 +66,96 @@
 }
 
 .theme-menu__item {
+  
+
+}
+
+.theme-menu__button {
+  position: relative;
   text-transform: uppercase;
+  border: none;
+  background: none;
+
+}
+
+.theme-menu__button:disabled::before,
+.theme-menu__button:disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button:disabled::before {
+  content: '▶';
+  position: absolute;
+  top: 1px;
+  left: -15px;
+
+}
+
+.content {
+  margin: 0 auto;
+  inline-size: clamp(320px, 100vw, 696px);
+
+}
+
+.card {
+
+}
+
+.card__list {
+
+}
+
+.card__list-item {
+
+}
+
+.card__title {
+
+}
+
+.card__image-wrapper {
+  position: relative;
+
+}
+
+.card__image {
+  
+
+}
+
+.card__label {
+  position: absolute;
+  inset-block-start: 25px;
+  inset-inline-end: clamp(0.688rem, 3.723vw - 0.057rem, 1.563rem);
+  z-index: 1;
+  font-family: var(--accent-font), fantasy;
+  mix-blend-mode: hard-light;
+  opacity: .5;
+  text-shadow: 
+    -1px -1px 0 var(--background-color),
+    1px -1px 0 var(--background-color),
+    -1px 1px 0 var(--background-color),
+    1px 1px 0 var(--background-color);
+
+}
+
+.card__description {
+
+}
+
+.card__text {
+
+}
+
+.card__button {
+
+}
+
+.heart__button {
+
+}
+
+.like__button {
 
 }
