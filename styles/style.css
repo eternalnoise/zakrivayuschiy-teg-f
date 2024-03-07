@@ -17,5 +17,50 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), Arial, sans-serif;
+  font-variation-settings: 'wght' var(--main-font-weight);
+  background-color: var(--background-color);
+  color: var(--main-text-color);
+  background-image: var(--background-image);
+  background-size: cover;
+  inline-size: var(--inline-size);
+  margin: 0 auto;
+  
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 25px;
+  font-family: var(--accent-font, monospace);
+  block-size: clamp(20.188rem, 3.661vw + 19.455rem, 22.75rem);
+  margin-block: 102px 104px;
+  text-transform: uppercase;
+
+}
+
+.header__title {
+  font-size: 49px;
+   
+}
+
+.header__subtitile {
+  font-size: var(--main-font-size);
+   
+
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+}
+
+.theme-menu__item {
+  text-transform: uppercase;
+
 }
