@@ -15,7 +15,7 @@
 */
 
 .page {
-  min-inline-size: 320px;
+  min-inline-size: 375px;
   min-block-size: 100dvb;
   font-family: var(--main-font), Arial, sans-serif;
   font-variation-settings: 'wght' var(--main-font-weight);
@@ -32,17 +32,21 @@
 
 .header {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   gap: 25px;
   font-family: var(--accent-font, fantasy);
   block-size: clamp(20.188rem, 3.661vw + 19.455rem, 22.75rem);
+  max-inline-size: 700px;
   margin-block: 102px 104px;
+  margin-inline: auto;
   text-transform: uppercase;
-  border: 2px solid var(--main-text-color);
+  border: var(--page-border);
   background-color: var(--background-color);
+  padding-inline: clamp(0.875rem, 32.615vw - 6.769rem, 7.5rem);
+  padding-block-end: 25px;
+  padding-block-start: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem);
   
 
 }
@@ -53,7 +57,7 @@
 }
 
 .header__subtitile {
-  font-size: var(--main-font-size);
+  font-size: clamp(0.875rem, 2.769vw + 0.226rem, 1.438rem);
    
 
 }
@@ -70,18 +74,35 @@
 
 }
 
+.button {
+  position: relative;
+  transition: opacity 0.3s ease;
+  border: var(--page-border);
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 var(--main-text-color);
+}
+
 .theme-menu__button {
+  font-size: var(--accent-font-size);
   position: relative;
   text-transform: uppercase;
   border: none;
   background: none;
+}
+
+.theme-menu__button:hover,
+.theme-menu__button:focus,
+.theme-menu__button:disabled {
+  opacity: .6;
+  outline: none;
 
 }
 
 .theme-menu__button:disabled::before,
 .theme-menu__button:disabled {
   pointer-events: none;
-  opacity: 0.6;
 }
 
 .theme-menu__button:disabled::before {
@@ -89,20 +110,30 @@
   position: absolute;
   top: 1px;
   left: -15px;
+  animation: disabled-button 0.5s ease-in-out infinite alternate;
 
+}
+
+.theme-menu__button:hover {
+  cursor: pointer;
 }
 
 .content {
   margin: 0 auto;
-  inline-size: clamp(320px, 100vw, 696px);
+  
 
 }
 
 .card {
+  border: var(--page-border);
+  background-color: var(--background-color);
 
 }
 
 .card__list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3.125rem, 0.376vw + 3.037rem, 3.375rem);
 
 }
 
@@ -111,6 +142,7 @@
 }
 
 .card__title {
+  font-variation-settings: 'wght' var(--title-font-weght);
 
 }
 
@@ -120,6 +152,10 @@
 }
 
 .card__image {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
   
 
 }
@@ -141,21 +177,32 @@
 }
 
 .card__description {
+  
 
 }
 
 .card__text {
+  padding: 25px;
 
 }
+
+
 
 .card__button {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-inline-end: 25px;
+  margin-block-end: 25px;
 
 }
 
-.heart__button {
+.card__icon-button {
 
 }
 
-.like__button {
+.card__like-button {
+  inline-size: 130px;
+  block-size: 38px;
 
 }
