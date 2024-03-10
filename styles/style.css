@@ -81,7 +81,6 @@
 
   padding: 10px 17px;
   overflow: hidden;
-  color: var();
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   background-color: var(--background-color);
@@ -103,7 +102,7 @@
   transition: transform 0.5s ease-in-out;
   transform: scaleX(0);
   transform-origin: left;
-  background-color: var(--background-color);
+  background-color: var(--main-text-color);
 }
 
 .button:hover::before {
@@ -113,6 +112,8 @@
 .button__text {
   color: var(--animation-button-text-color);
   mix-blend-mode: difference;
+  position: relative;
+  
 
 }
 
@@ -274,7 +275,30 @@
 
 }
 
-.button-text {
-  position: relative;
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-block: 54px 105px;
+
+}
+
+.save__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  
+ 
+}
+
+.save-icon {
+
+  max-inline-size: 21px;
+  max-block-size: 21px;
+  color: var(--animation-button-text-color);
+  mix-blend-mode: difference;
+}
+
+.dialog-icon {
 
 }
