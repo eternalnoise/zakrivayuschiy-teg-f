@@ -13,5 +13,6 @@
   linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   --inline-size: clamp(375px, 100vw, 700px);
   --page-border: 2px solid var(--main-text-color);
+  --animation-button-text-color: #fff;
 
 }

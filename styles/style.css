@@ -110,6 +110,12 @@
   transform: scaleX(1);
 }
 
+.button__text {
+  color: var(--animation-button-text-color);
+  mix-blend-mode: difference;
+
+}
+
 .theme-menu__button {
   font-size: var(--accent-font-size);
   position: relative;
