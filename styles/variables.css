@@ -6,13 +6,17 @@
   --title-font-weght: 700;
   --main-font-size: 18px;
   --accent-font-size: 14px;
-  --main-text-color: #000;
+  --accent-color: #000;
   --background-color: #fff;
   --background-image: repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
   repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
   linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   --inline-size: clamp(375px, 100vw, 700px);
-  --page-border: 2px solid var(--main-text-color);
+  --page-border: 2px solid var(--accent-color);
   --animation-button-text-color: #fff;
 
+  --heart-contour-color: #000;
+  --heart-core-color: #fff;
+  --heart-main-body-color: #FF0000; 
+  --heart-sparks-color: #FF0000;
 }
