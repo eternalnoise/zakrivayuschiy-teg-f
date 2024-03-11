@@ -203,6 +203,7 @@
 
 .card__title {
   font-variation-settings: 'wght' var(--title-font-weght);
+  padding-inline-start: 10px;
 
 }
 
@@ -237,13 +238,16 @@
 }
 
 .card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
   
 
 }
 
 .card__text {
-  padding: 25px;
-
+  
 }
 
 
@@ -255,14 +259,12 @@
   gap: 12px;
   padding-inline-end: 25px;
   padding-block-end: 25px;
-
 }
 
 .card__icon-button {
   border: none;
   transition: outline 0.3s ease;
   background-color: transparent;
-
 }
 
 .card__icon-button:focus {
@@ -306,9 +308,48 @@
   z-index: 1;
 }
 
-.dialog-icon {
+/* dialog window styles */
 
+.dialog[open] {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  max-inline-size: clamp(21.313rem, 1.502vw + 20.96rem, 22.313rem);
+  background-color: var(--background-color);
+  border: var(--page-border);
+  gap: 30px;
 }
+
+.dialog::backdrop {
+  background-color: rgb(0, 0, 0, 0.75);
+}
+
+.dialog__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.dialog-icon {
+  max-block-size: 39px;
+  max-inline-size: 39px;
+  color: var(--accent-color);
+}
+
+.dialog__text {
+  font-family: var(--accent-font);
+  font-size: var(--main-font-size);
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.dialog__button {
+  min-block-size: 38px;
+  inline-size: 100%;
+  text-transform: uppercase;
+}
+
 
 /* van-images styles */
 
@@ -338,4 +379,18 @@
 
 .card__image-filter-multiple {
   filter: hue-rotate(170deg) drop-shadow(5px 15px 3px rgba(0, 0, 0, 0.8)) blur(1px);
+}
+
+/* media styles */
+
+@media (width <= 375px) {
+  .save__button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dialog-wrapper {
+    align-items: center;
+  }
+
 }
