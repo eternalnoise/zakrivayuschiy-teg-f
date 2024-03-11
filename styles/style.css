@@ -339,7 +339,8 @@
 
 .dialog__text {
   font-family: var(--accent-font);
-  font-size: var(--main-font-size);
+  font-size: var(--accent-font-size);
+  line-height: 21px;
   text-transform: uppercase;
   color: var(--accent-color);
 }
@@ -389,8 +390,13 @@
     flex-direction: column;
   }
 
-  .dialog-wrapper {
+  .dialog__wrapper {
     align-items: center;
+  }
+
+  .dialog__text {
+    font-size: var(--accent-font-size);
+    line-height: 21px;
   }
 
 }
