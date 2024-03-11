@@ -292,12 +292,13 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  min-inline-size: 335px;
+  padding-block: 18px;  
   
  
 }
 
 .save-icon {
-
   max-inline-size: 21px;
   max-block-size: 21px;
   color: var(--animation-button-text-color);
@@ -307,4 +308,34 @@
 
 .dialog-icon {
 
+}
+
+/* van-images styles */
+
+.card__image-filter-contrast {
+  filter: contrast(33%);
+}
+
+.card__image-filter-brightness {
+  filter: brightness(60%);
+}
+
+.card__image-filter-sepia {
+  filter: sepia(62%);
+}
+
+.card__image-filter-blur {
+  filter: blur(5px);
+}
+
+.card__image-filter-invert {
+  filter: invert(91%);
+}
+
+.card__image-filter-hue-rotate {
+  filter: hue-rotate(144deg);
+}
+
+.card__image-filter-multiple {
+  filter: hue-rotate(170deg) drop-shadow(5px 15px 3px rgba(0, 0, 0, 0.8)) blur(1px);
 }
