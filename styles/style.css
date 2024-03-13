@@ -289,7 +289,7 @@
 
 .dialog[open] {
   position: fixed;
-  bottom: 33px;
+  bottom: 125px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -370,7 +370,7 @@
     min-inline-size: 306px;
   }
 
-  .card_title {
+  .card__title {
     padding: 3.5px 10px 5.5px;
   }
 
@@ -379,7 +379,7 @@
   }
 
   .card__description {
-    padding: 31px 28px 15px;
+    padding: 22.5px 28px 25px 25px;
   }
 
   .save-icon {
@@ -388,7 +388,7 @@
   }
 
   .dialog[open] {
-    top: 50px;
+    top: 140x;
   }
 }
 
