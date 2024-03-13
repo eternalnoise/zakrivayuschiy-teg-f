@@ -9,7 +9,7 @@
   --background-color: #000;
   --accent-color: #00CC14;
   --main-font-weight: 465;
-  --title-font-weght: 785;
+  --title-font-weight: 785;
   --background-image: repeating-linear-gradient(to right, #000, #000 2px, transparent 2px, transparent 4px),
                       repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px, transparent 4px),
                       linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
@@ -38,6 +38,7 @@
     --background-color: #000;
     --accent-color: #00CC14;
     --main-font-weight: 465;
+    --title-font-weight: 785;
     --main-text-color: #00CC14;
     --animation-button-text-color: #00CC14;
     --heart-contour-color: #00CC14;

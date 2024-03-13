@@ -72,7 +72,7 @@
   padding: 10px 17px;
   overflow: hidden;
   font-family: var(--accent-font), fantasy;
-  font-size: 14px;
+  font-size: var(--accent-font-size);
   background-color: var(--background-color);
   transition: box-shadow 0.3s ease;
   cursor: pointer;
@@ -177,7 +177,7 @@
   padding-block: 3px;
   font-size: var(--main-font-size);
   line-height: 21.78px;
-  font-variation-settings: 'wght' var(--title-font-weght);
+  font-variation-settings: 'wght' var(--title-font-weight);
   border-block-end: var(--page-border);
 }
 
@@ -237,10 +237,15 @@
 }
 
 .card__icon-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: none;
-  padding-block-start: 5px;
   background-color: transparent;
   transition: outline 0.3s ease;
+  cursor: pointer;
+  block-size: 38px; 
+  inline-size: 42px;
 }
 
 .card__icon-button:focus {
