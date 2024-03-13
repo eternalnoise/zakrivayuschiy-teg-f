@@ -27,37 +27,35 @@
 }
 
 .core {
-  opacity: 0;
-} 
-
-.card__icon-button .core {
-  opacity: 0;
-  fill: var(--heart-contour-color);
-  transition: fill 0.03s ease, opacity 0.3s ease;
+  fill: transparent;
+  transition: fill 0.3s ease 0.03s;
 }
-
-.card__icon-button:hover .core {
+ 
+.like-icon:hover .core {
   opacity: 1;
   fill: var(--heart-contour-color);
-  transition: fill 0.3s ease, opacity 0.3s ease;
+  transition: fill 0.3s linear, opacity 0.03s;
+  transition-delay: 0.1s;
 }
 
-.main-body {
-  opacity: 0;
-}
-
-.card__icon-button:hover .main-body {
+.like-icon:hover .main-body {
   opacity: 1;
   fill: var(--heart-contour-color);
-  transition: fill 0.3s ease, opacity 0.3s ease;
+  transition: fill 0.3s linear, opacity 0.3s linear;
   transition-delay: 0.05s;
 }
 
-.card__icon-button:active .core {
+.like-icon .main-body {
+  opacity: 0;
+  fill: var(--heart-contour-color);
+  transition: fill 0.03s linear, opacity 0.3s linear;
+}
+
+.like-icon:active .core {
   fill: var(--heart-main-body-color);
 }
 
-.card__icon-button:active .main-body {
+.like-icon:active .main-body {
   fill: var(--heart-main-body-color);
 }
 
@@ -91,8 +89,8 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: heart-animation 0.3s ease-in alternate 0.1s;
   transform-origin: center;
+  animation: heart-animation 0.3s ease-in alternate 0.1s;
 }
 
 @keyframes sparks-animation {

@@ -13,8 +13,6 @@
   --background-image: repeating-linear-gradient(to right, #000, #000 2px, transparent 2px, transparent 4px),
                       repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px, transparent 4px),
                       linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
-  --inline-size: clamp(375px, 100vw, 700px);
-  --page-border: 2px solid var(--accent-color);
   --animation-button-text-color: #00CC14;
   --heart-contour-color: #00CC14;
   
@@ -27,14 +25,12 @@
   --background-image: repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
   repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
   linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-  --inline-size: clamp(375px, 100vw, 700px);
-  --page-border: 2px solid var(--accent-color);
   --animation-button-text-color: #fff;
   --heart-contour-color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root.theme-dark {
+  :root {
     --background-color: #000;
     --accent-color: #00CC14;
     --main-font-weight: 465;
@@ -42,6 +38,9 @@
     --main-text-color: #00CC14;
     --animation-button-text-color: #00CC14;
     --heart-contour-color: #00CC14;
+    --background-image: repeating-linear-gradient(to right, #000, #000 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px, transparent 4px),
+    linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
   }
 }
 

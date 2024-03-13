@@ -159,7 +159,6 @@
 
 /* cards container */
 
-
 .content {
   display: flex;
   flex-direction: column;
@@ -183,6 +182,7 @@
 
 .card__image-wrapper {
   position: relative;
+  border-block-end: var(--page-border);
 }
 
 .card__image {
@@ -222,7 +222,7 @@
   flex-direction: column;
   gap: 27px;
   border-block-start: var(--page-border);
-  padding: 30px 25px 17px;
+  padding: 27px 25px 25px;
   font-size: var(--main-font-size);
   line-height: 21px;
 }
@@ -231,15 +231,14 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 5px;
   padding-inline-end: 25px;
-  padding-block-end: 20px;
+  padding-block-end: 25px;
 }
 
 .card__icon-button {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   border: none;
   background-color: transparent;
   transition: outline 0.3s ease;
