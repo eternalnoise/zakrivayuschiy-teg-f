@@ -289,13 +289,14 @@
 
 .dialog[open] {
   position: fixed;
-  bottom: 125px;
+  bottom: 80px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   border: var(--page-border);
   background-color: var(--background-color);
   min-inline-size: clamp(21.313rem, 1.502vw + 20.96rem, 22.313rem);
+  padding: 31.5px 32.5px;
 }
 
 .dialog::backdrop {
