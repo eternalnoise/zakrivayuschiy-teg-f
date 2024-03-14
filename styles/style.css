@@ -387,9 +387,4 @@
     min-inline-size: 28px;
     min-block-size: 28px;
   }
-
-  .dialog[open] {
-    top: 140x;
-  }
 }
-
