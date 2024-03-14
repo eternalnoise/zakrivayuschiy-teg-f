@@ -287,9 +287,12 @@
 
 /* dialog window styles */
 
-.dialog[open] {
+.dialog {
   position: fixed;
-  bottom: 80px;
+  inset: 0;
+}
+
+.dialog[open] {
   display: flex;
   flex-direction: column;
   gap: 30px;
