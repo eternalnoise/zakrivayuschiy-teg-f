@@ -40,11 +40,11 @@
   align-items: center;
   gap: 21px;
   margin-inline: auto;
-  margin-block: 102px 104px;
+  margin-block: 102px 100px;
   border: var(--page-border);
   padding-inline: clamp(0.875rem, 32.615vw - 6.769rem, 7.5rem);
   padding-block-start: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem);
-  padding-block-end: 19px;
+  padding-block-end: 25px;
   font-family: var(--accent-font, fantasy);
   text-transform: uppercase;
   background-color: var(--background-color);
@@ -63,7 +63,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-inline-start: 17px;
+  padding-inline-start: 20px;
 }
 
 .button {
@@ -163,7 +163,12 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  margin: 0 auto;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .card {
@@ -173,7 +178,7 @@
 
 .card__title {
   padding-inline-start: 10px;
-  padding-block: 3px;
+  padding-block: 5px;
   font-size: var(--main-font-size);
   line-height: 21.78px;
   font-variation-settings: 'wght' var(--title-font-weight);
@@ -182,7 +187,6 @@
 
 .card__image-wrapper {
   position: relative;
-  border-block-end: var(--page-border);
 }
 
 .card__image {
@@ -222,7 +226,7 @@
   flex-direction: column;
   gap: 27px;
   border-block-start: var(--page-border);
-  padding: 27px 25px 25px;
+  padding: 24.5px 26px 25px;
   font-size: var(--main-font-size);
   line-height: 21px;
 }
@@ -233,12 +237,13 @@
   align-items: center;
   padding-inline-end: 25px;
   padding-block-end: 25px;
+  gap: 5px;
 }
 
 .card__icon-button {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   border: none;
   background-color: transparent;
   transition: outline 0.3s ease;
@@ -272,8 +277,8 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding-block: 18px;
-  min-inline-size: 335px;
+  padding-block: 26px;
+  min-inline-size: 340px;
   max-block-size: 51px;  
 }
 
