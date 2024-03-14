@@ -342,31 +342,31 @@
 /* van-images styles */
 
 .card__image-filter-contrast {
-  filter: contrast(33%);
+  filter: contrast(85%);
 }
 
 .card__image-filter-brightness {
-  filter: brightness(60%);
+  filter: brightness(86%);
 }
 
 .card__image-filter-sepia {
-  filter: sepia(62%);
+  filter: sepia(22%);
 }
 
 .card__image-filter-blur {
-  filter: blur(5px);
+  filter: blur(1px);
 }
 
 .card__image-filter-invert {
-  filter: invert(91%);
+  filter: invert(-20%);
 }
 
 .card__image-filter-hue-rotate {
-  filter: hue-rotate(144deg);
+  filter: hue-rotate(290deg);
 }
 
 .card__image-filter-multiple {
-  filter: hue-rotate(170deg) drop-shadow(5px 15px 3px rgba(0, 0, 0, 0.8)) blur(1px);
+  filter: hue-rotate(183deg) drop-shadow(5px 15px 3px rgba(0, 0, 0, 0.8));
 }
 
 /* media styles */
