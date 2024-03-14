@@ -20,7 +20,7 @@
   align-items: center;
   margin: 0 auto;
   color: var(--accent-color);
-  font-family: var(--main-font), Arial, sans-serif;
+  font-family: var(--main-font);
   background-color: var(--background-color);
   background-image: var(--background-image);
   background-size: cover;
@@ -38,7 +38,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 21px;
   margin-inline: auto;
   margin-block: 102px 100px;
   border: var(--page-border);
@@ -52,11 +51,12 @@
 }
 
 .header__logo {
-  font-size: clamp(3.063rem, 4.984vw + 1.894rem, 4.063rem);
+  font-size: clamp(3.063rem, 1.502vw + 2.71rem, 4.063rem);
 }
 
 .header__title {
-  font-size: clamp(0.875rem, 2.769vw + 0.226rem, 1.438rem);
+  font-size: clamp(0.875rem, 0.845vw + 0.677rem, 1.438rem);
+  padding-block: 19px 20px
 }
 
 .theme-menu__list {
@@ -183,6 +183,7 @@
   line-height: 21.78px;
   font-variation-settings: 'wght' var(--title-font-weight);
   border-block-end: var(--page-border);
+  letter-spacing: .05px;
 }
 
 .card__image-wrapper {
