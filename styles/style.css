@@ -39,7 +39,7 @@
   justify-content: center;
   align-items: center;
   margin-inline: auto;
-  margin-block: 102px 100px;
+  margin-block: 101px 100px;
   border: var(--page-border);
   padding-inline: clamp(0.875rem, 32.615vw - 6.769rem, 7.5rem);
   padding-block-start: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem);
@@ -56,13 +56,13 @@
 
 .header__title {
   font-size: clamp(0.875rem, 0.845vw + 0.677rem, 1.438rem);
-  padding-block: 19px 20px
+  padding-block: 21px 21px;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 11px;
   padding-inline-start: 20px;
 }
 
@@ -183,7 +183,6 @@
   line-height: 21.78px;
   font-variation-settings: 'wght' var(--title-font-weight);
   border-block-end: var(--page-border);
-  letter-spacing: .05px;
 }
 
 .card__image-wrapper {
@@ -227,7 +226,7 @@
   flex-direction: column;
   gap: 27px;
   border-block-start: var(--page-border);
-  padding: 24.5px 26px 25px;
+  padding: 24.5px 25px 25px;
   font-size: var(--main-font-size);
   line-height: 21px;
 }
@@ -375,7 +374,7 @@
 @media (width <= 400px) {
   .save__button {
     flex-direction: column;
-    padding-bottom: 14px;
+    padding-bottom: 25px;
     min-block-size: 86px;
     min-inline-size: 306px;
   }
@@ -389,7 +388,7 @@
   }
 
   .card__description {
-    padding: 22.5px 28px 25px 25px;
+    padding: 24.5px 26px 25px 25px;
   }
 
   .save-icon {
